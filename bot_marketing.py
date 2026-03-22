@@ -9,9 +9,9 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 load_dotenv(r"C:\Users\leoqu\Desktop\.env")
 
-# ============================================================
+# ===========================================================
 #  CONFIGURATION
-# ============================================================
+# ===========================================================
 BOT_TOKEN      = os.environ.get("MARKETING_BOT_TOKEN")
 ADMIN_ID       = int(os.environ.get("ADMIN_ID", "0"))
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
