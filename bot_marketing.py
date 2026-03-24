@@ -582,6 +582,9 @@ def cmd_compte(message):
     else:
         bot.reply_to(message, "❌ Erreur. Réessaie dans quelques secondes.")
 
+@bot.message_handler(commands=["myid"])
+def cmd_myid(message):
+    bot.reply_to(message, f"Ton ID : {message.from_user.id}")
 
 @bot.message_handler(func=lambda m: True)
 def handle_unknown(message):
